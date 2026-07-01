@@ -27,10 +27,11 @@
     box-sizing: border-box;
 }
 
-body {
+body, html{  
     background-color: var(--cor0);
     font-family:var(--font-normal);
     font-weight: normal;
+    scroll-behavior: smooth;
 }
 
 header {
@@ -65,6 +66,9 @@ header > p {
 }
 
 nav{
+    display:flex;
+    justify-content: center;
+    gap:30px;
     margin: 20px auto;
     padding: 10px;
     min-width: 300px;
@@ -75,7 +79,8 @@ nav{
 }
 
 nav > a {
-    display:inline-block;
+    display:flex;
+    justify-content: center;
     margin:0px 5px;
     padding:15px;
     color:var(--cor1);
@@ -118,7 +123,6 @@ main img {
     display: block;
     margin: auto;
     max-width: 100%;
-
 }
 
 main strong{
